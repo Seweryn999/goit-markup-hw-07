@@ -25,7 +25,6 @@
           <a href="./index.html" class="logo link"
             >Web<span class="logo-studio">Studio</span></a
           >
-
           <ul class="header-list list">
             <li>
               <a href="./index.html" class="list-link link current">Studio</a>
@@ -38,6 +37,36 @@
             </li>
           </ul>
         </nav>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="22"
+            viewBox="0 0 32 22"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_297053_2156)">
+              <path
+                d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+                stroke="#2E2F42"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_297053_2156">
+                <rect width="32" height="22" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+
         <address class="address">
           <ul class="address-list list">
             <li class="address-links">
@@ -54,6 +83,7 @@
         </address>
       </div>
     </header>
+
     <main>
       <section class="hero-image">
         <div class="hero-image-container container">
@@ -385,7 +415,7 @@
     <footer class="footer-section">
       <div class="container footer-div">
         <div class="logo-container">
-          <a href="./index.html" class="logo link footer-logo-link"
+          <a href="./index.html" class="link footer-logo-link"
             >Web<span class="footer-logo-studio">Studio</span></a
           >
           <p class="footer-descrip">
@@ -447,6 +477,73 @@
         </div>
       </div>
     </footer>
+    <div class="toggle-container js-menu-container" id="mobile-menu">
+      <button type="button" class="close-button js-close-menu">
+        <svg width="8" height="8" class="colorfill-button-menu">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="menu-nav list">
+          <li>
+            <a href="./index.html" class="menu-font current-color link"
+              >Studio</a
+            >
+          </li>
+          <li>
+            <a href="./portfolio.html" class="menu-font link">Portfolio</a>
+          </li>
+          <li><a href="" class="menu-font link">Contacts</a></li>
+        </ul>
+      </nav>
+      <address>
+        <ul class="menu-adress list">
+          <li>
+            <a href="tel:+110001111111" class="menu-font menu-number link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="menu-email link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <div class="social-media">
+          <ul class="list mobile-social-list">
+            <li class="social-element">
+              <a href="index.html" class="member-social-link">
+                <svg width="16" height="16" class="icon-svg">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-element">
+              <a href="index.html" class="member-social-link">
+                <svg width="16" height="16" class="icon-svg">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-element">
+              <a href="index.html" class="member-social-link">
+                <svg width="16" height="16" class="icon-svg">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-element">
+              <a href="index.html" class="member-social-link">
+                <svg width="16" height="16" class="icon-svg">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </address>
+    </div>
+
     <div class="back-drop is-hidden" data-modal>
       <div class="modal-box">
         <button type="button" class="close-button" data-modal-close>
@@ -480,7 +577,7 @@
               <input
                 id="user-phone"
                 class="modal-box-inputs"
-                type="number"
+                type="text"
                 name="phone"
                 placeholder=""
                 required
@@ -508,8 +605,8 @@
           </div>
 
           <div class="comment-container">
-            <label class="modal-box-label" for="user-comment">Comment</label>
-            <textarea
+            <label class="modal-box-label" for="user-comment">Comment</label
+            ><textarea
               id="user-comment"
               name="user-comment"
               placeholder="Text input"
@@ -542,6 +639,8 @@
         </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js" defer></script>
   </body>
 </html>
