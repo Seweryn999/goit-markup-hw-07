@@ -1,1 +1,1 @@
-https://seweryn999.github.io/goit-markup-hw-06/
+https://seweryn999.github.io/goit-markup-hw-07/
