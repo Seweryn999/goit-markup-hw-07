@@ -169,7 +169,7 @@ body {
   max-width: 1440px;
   margin: auto;
   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url('../images/people-office.jpg');
+    url('../images/office1.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -819,7 +819,7 @@ body {
   .hero-image {
     padding: 112px 0;
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/people-office-768.jpg);
+      url(../images/office2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -906,7 +906,7 @@ body {
   .hero-image {
     padding: 112px 0;
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/people-office-mobile.jpg);
+      url(../images/office3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
